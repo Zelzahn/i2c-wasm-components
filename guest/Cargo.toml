@@ -1,11 +1,11 @@
 [package]
-name = "screen_test"
+name = "guest"
 version = "0.1.0"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+crate-type = ["cdylib"]
 
 [dependencies]
-embedded-hal = { workspace = true }
-hd44780-driver = { workspace = true }
-rppal = { workspace = true }
+wit-bindgen = { git = "https://github.com/bytecodealliance/wit-bindgen", version = "0.16.0" }
